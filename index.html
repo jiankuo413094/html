@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github 網頁</title>
-    <!-- 外部連結 -->
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- 內部連結 -->
 <style>
     P {
         color: red;
@@ -16,10 +14,28 @@
 </style>
 
 <body>
-    <!-- 行內連結 -->
     <p style="color:red">  :)  </p>
     我的 Github 網頁！！
-<br>尼好</br>
+    <br>尼好</br>
+    <h1>早安</h1>
+    <br>123123</br>
+    <button onclick="addButton()">新增按鈕</button>
+
+<div id="btnArea"></div>
+
+<script>
+  let count = 0;
+
+  function addButton() {
+    count++;
+
+    const btn = document.createElement("button");
+    btn.textContent = "按鈕 " + count;
+
+    document.getElementById("btnArea").appendChild(btn);
+  }
+</script>
+    
    
 </body>
 
